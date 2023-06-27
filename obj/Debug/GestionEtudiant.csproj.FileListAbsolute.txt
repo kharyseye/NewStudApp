@@ -1,0 +1,14 @@
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\GestionEtudiant.exe.config
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\GestionEtudiant.exe
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\GestionEtudiant.pdb
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\Guna.UI2.dll
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.FrmEtudiant.resources
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.Home.resources
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.Properties.Resources.resources
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.CopyComplete
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.exe
+C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.pdb
