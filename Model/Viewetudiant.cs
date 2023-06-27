@@ -14,8 +14,8 @@ namespace GestionEtudiant.Model
     
     public partial class Viewetudiant
     {
-        public int Expr1 { get; set; }
-        public string Expr2 { get; set; }
+        public int idPers { get; set; }
+        public string NomPers { get; set; }
         public string PrenomPers { get; set; }
         public string TelPers { get; set; }
         public string EmailPers { get; set; }

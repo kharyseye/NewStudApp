@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbetudiantModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Etudiant">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Genre" Type="nchar" MaxLength="15" />
+    <Property Name="Filiere" Type="nchar" MaxLength="20" />
+    <Property Name="Niveau" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Personne">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomPers" Type="nchar" MaxLength="50" />
+    <Property Name="PrenomPers" Type="nchar" MaxLength="50" />
+    <Property Name="TelPers" Type="nchar" MaxLength="15" />
+    <Property Name="EmailPers" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'dbetudiant.dbo.Viewetudiant' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="Viewetudiant">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="int" Nullable="false" />
+    <Property Name="NomPers" Type="nchar" MaxLength="50" />
+    <Property Name="PrenomPers" Type="nchar" MaxLength="50" />
+    <Property Name="TelPers" Type="nchar" MaxLength="15" />
+    <Property Name="EmailPers" Type="nchar" MaxLength="50" />
+    <Property Name="Genre" Type="nchar" MaxLength="15" />
+    <Property Name="Filiere" Type="nchar" MaxLength="20" />
+    <Property Name="Niveau" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="dbetudiantModelStoreContainer">
+    <EntitySet Name="Etudiant" EntityType="Self.Etudiant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personne" EntityType="Self.Personne" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Viewetudiant" EntityType="Self.Viewetudiant" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Viewetudiant].[idPers] AS [idPers], 
+    [Viewetudiant].[NomPers] AS [NomPers], 
+    [Viewetudiant].[PrenomPers] AS [PrenomPers], 
+    [Viewetudiant].[TelPers] AS [TelPers], 
+    [Viewetudiant].[EmailPers] AS [EmailPers], 
+    [Viewetudiant].[Genre] AS [Genre], 
+    [Viewetudiant].[Filiere] AS [Filiere], 
+    [Viewetudiant].[Niveau] AS [Niveau]
+    FROM [dbo].[Viewetudiant] AS [Viewetudiant]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

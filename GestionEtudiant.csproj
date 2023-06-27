@@ -61,6 +61,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbetudiantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbetudiantDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbetudiantDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbetudiantDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbetudiantDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbetudiantDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmEtudiant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +133,39 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dbEtuEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="dbetudiantDataSet.xsc">
+      <DependentUpon>dbetudiantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbetudiantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbetudiantDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbetudiantDataSet.xss">
+      <DependentUpon>dbetudiantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbetudiantDataSet1.xsc">
+      <DependentUpon>dbetudiantDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbetudiantDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbetudiantDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbetudiantDataSet1.xss">
+      <DependentUpon>dbetudiantDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbetudiantDataSet2.xsc">
+      <DependentUpon>dbetudiantDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbetudiantDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbetudiantDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbetudiantDataSet2.xss">
+      <DependentUpon>dbetudiantDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Model\dbEtuEntities.edmx.diagram">
       <DependentUpon>dbEtuEntities.edmx</DependentUpon>
     </None>

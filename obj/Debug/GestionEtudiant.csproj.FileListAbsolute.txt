@@ -12,3 +12,8 @@ C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.CoreCo
 C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.csproj.CopyComplete
 C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.exe
 C:\Users\HP\source\repos\GestionEtudiant\obj\Debug\GestionEtudiant.pdb
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\EntityFramework.dll
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\EntityFramework.xml
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\source\repos\GestionEtudiant\bin\Debug\fr\EntityFramework.resources.dll

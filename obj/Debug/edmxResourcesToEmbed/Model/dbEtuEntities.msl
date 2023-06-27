@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbetudiantModelStoreContainer" CdmEntityContainer="dbetudiantEntities">
+    <EntitySetMapping Name="Etudiant">
+      <EntityTypeMapping TypeName="dbetudiantModel.Etudiant">
+        <MappingFragment StoreEntitySet="Etudiant">
+          <ScalarProperty Name="idPers" ColumnName="idPers" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Filiere" ColumnName="Filiere" />
+          <ScalarProperty Name="Niveau" ColumnName="Niveau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personne">
+      <EntityTypeMapping TypeName="dbetudiantModel.Personne">
+        <MappingFragment StoreEntitySet="Personne">
+          <ScalarProperty Name="idPers" ColumnName="idPers" />
+          <ScalarProperty Name="NomPers" ColumnName="NomPers" />
+          <ScalarProperty Name="PrenomPers" ColumnName="PrenomPers" />
+          <ScalarProperty Name="TelPers" ColumnName="TelPers" />
+          <ScalarProperty Name="EmailPers" ColumnName="EmailPers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Viewetudiant">
+      <EntityTypeMapping TypeName="dbetudiantModel.Viewetudiant">
+        <MappingFragment StoreEntitySet="Viewetudiant">
+          <ScalarProperty Name="Niveau" ColumnName="Niveau" />
+          <ScalarProperty Name="Filiere" ColumnName="Filiere" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="EmailPers" ColumnName="EmailPers" />
+          <ScalarProperty Name="TelPers" ColumnName="TelPers" />
+          <ScalarProperty Name="PrenomPers" ColumnName="PrenomPers" />
+          <ScalarProperty Name="NomPers" ColumnName="NomPers" />
+          <ScalarProperty Name="idPers" ColumnName="idPers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

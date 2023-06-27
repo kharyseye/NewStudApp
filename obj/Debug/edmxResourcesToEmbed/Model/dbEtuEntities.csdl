@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbetudiantModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Etudiant">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Genre" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Filiere" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Niveau" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Personne">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PrenomPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="TelPers" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="EmailPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="dbetudiantEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Etudiant" EntityType="Self.Etudiant" />
+    <EntitySet Name="Personne" EntityType="Self.Personne" />
+    <EntitySet Name="Viewetudiant" EntityType="dbetudiantModel.Viewetudiant" />
+  </EntityContainer>
+  <EntityType Name="Viewetudiant">
+    <Key>
+      <PropertyRef Name="idPers" />
+    </Key>
+    <Property Name="idPers" Type="Int32" Nullable="false" />
+    <Property Name="NomPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PrenomPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="TelPers" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="EmailPers" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Genre" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Filiere" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Niveau" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+</Schema>
